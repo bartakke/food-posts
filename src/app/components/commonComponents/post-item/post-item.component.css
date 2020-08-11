@@ -1,4 +1,9 @@
 
+.card_layout{
+  height: 183px;
+  margin-right: 5px;
+  width: 183px;
+}
 .post-footer{
   background:#FCF2CC;
   font-size:12px;
@@ -17,4 +22,12 @@
 .post{
   vertical-align: middle;
   height: 100%;border-radius: 4px;
+}
+
+
+.img_backgorund{
+  background-color: #FFBF00;
+        border-radius: 59%;
+        padding: 4px;
+        font-size: 0px;
 }

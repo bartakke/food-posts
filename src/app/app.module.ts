@@ -15,6 +15,7 @@ import { HeaderComponent } from './components/commonComponents/header/header.com
 import { FooterComponent } from './components/commonComponents/footer/footer.component';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { PostItemComponent } from './components/commonComponents/post-item/post-item.component';
+import {ShortNumberPipe} from './components/pipes/short-number.pipe'
 
 @NgModule({
   declarations: [
@@ -23,7 +24,7 @@ import { PostItemComponent } from './components/commonComponents/post-item/post-
     PostContainerComponent,
     FooterComponent,
     PostItemComponent,
-
+    ShortNumberPipe
   ],
   imports: [
     BrowserModule,

@@ -18,7 +18,7 @@ export class PostContainerComponent implements OnInit {
   }
 
   getPostData() {
-    this.posts = this._posts.getPostData()
+    this.posts = this._posts.getPostData(1)
     console.log(this.posts)
   }
 
@@ -31,29 +31,5 @@ export class PostContainerComponent implements OnInit {
     "prevArrow": false,
     "nextArrow": false
   };
-
-  // addSlide() {
-  //   this.slides.push({img: "http://placehold.it/350x150/777777"})
-  // }
-
-  // removeSlide() {
-  //   this.slides.length = this.slides.length - 1;
-  // }
-
-  // slickInit(e) {
-  //   console.log('slick initialized');
-  // }
-
-  // breakpoint(e) {
-  //   console.log('breakpoint',e);
-  // }
-
-  // afterChange(e) {
-  //   console.log('afterChange');
-  // }
-
-  // beforeChange(e) {
-  //   console.log('beforeChange');
-  // }
 
 }

@@ -9,3 +9,9 @@
 .menu-item span {
  font-size:12px;
 }
+
+.footer{
+  height: 20px;
+line-height: 20px;
+background-color: #fff;
+}
