@@ -1,95 +1,42 @@
 <div class="container">
 
+  <!-- search box started here -->
   <div class="row">
     <input class="col-xl-12" type="text" class="search-box" id="exampleCheck1">
   </div>
-  <div class="secondary-title hash-tag-block">
+  <div class="secondary-title hash-tag-block mb-3">
     <span>Hashtags :</span>
     <span class="hashtag">#cheeselove</span>
   </div>
+  <!-- search box end here -->
 
+  <!-- User post started here  -->
   <div class="mt-4">
-    <div class="secondary-title hash-tag-block">
+    <div class="secondary-title hash-tag-block mb-3">
       <span>Your Posts :</span>
     </div>
-
-    <div class="">
-      <div class="d-flex">
-        <div class="card mr-4" style="width:183px;height: 183px;">
-          <div class="" style="vertical-align: middle;background: url('../../../../assets/product1.png') no-repeat center; height: 100%;">
-            <div class="d-flex justify-content-between p-1">
-              <div style=" color: #fff; font-size: 12px;">
-                <span class="material-icons" style=" font-size: 12px;">
-                  schedule
-                </span>
-                03 Jan
-              </div>
-              <div class="bg-black">
-                <div style="background-color: #FFBF00;
-                border-radius: 59%;
-                padding: 4px;
-                font-size: 0px;">
-                  <span class="material-icons">
-                    insert_photo
-                    </span>
-                </div>
-              </div>
-            </div>
-            <div class="d-flex justify-content-center" style="position: absolute;
-            bottom: 0px; background:#FCF2CC;">
-              <div style="font-size:12px;">
-                <span class="material-icons" style="font-size:12px;">
-                  favorite
-                  </span>
-                  8000
-              </div>
-              <div>
-                <span class="material-icons" style="font-size:12px;">
-                  sms
-                  </span>
-                  1000
-              </div>
-            </div>
-          </div>
+    <div>
+      <ngx-slick-carousel class="carousel"
+      #slickModal="slick-carousel"
+      [config]="slideConfig"
+    >
+        <div ngxSlickItem *ngFor="let post of posts" class="slide">
+          <app-post-item [postItem]="post" class="pr-4"></app-post-item>
         </div>
-        <div class="card" style="width:183px;height: 183px;">
-          <div class="" style="vertical-align: middle;background: url('../../../../assets/product1.png') no-repeat center; height: 100%;">
-            <div class="d-flex justify-content-between p-1">
-              <div style=" color: #fff; font-size: 12px;">
-                <span class="material-icons" style=" font-size: 12px;">
-                  schedule
-                </span>
-                03 Jan
-              </div>
-              <div class="bg-black">
-                <div style="background-color: #FFBF00;
-                border-radius: 59%;
-                padding: 4px;
-                font-size: 0px;">
-                  <span class="material-icons">
-                    insert_photo
-                    </span>
-                </div>
-              </div>
-            </div>
-            <div class="d-flex justify-content-center" style="position: absolute;
-            bottom: 0px; background:#FCF2CC;">
-              <div style="font-size:12px;">
-                <span class="material-icons" style="font-size:12px;">
-                  favorite
-                  </span>
-                  8000
-              </div>
-              <div>
-                <span class="material-icons" style="font-size:12px;">
-                  sms
-                  </span>
-                  1000
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      </ngx-slick-carousel>
     </div>
   </div>
+  <!-- User post end here  -->
+
+  <!-- User similar post started here  -->
+  <div class="secondary-title hash-tag-block d-flex justify-content-between mb-3">
+    <span>Similar posts</span>
+    <span class="hashtag">24 Posts</span>
+  </div>
+    <div class="d-flex flex-wrap">
+      <div  *ngFor="let post of posts" class="slide">
+        <app-post-item [postItem]="post" class="pr-4" width="183px"></app-post-item>
+      </div>
+    </div>
+  <!-- User similar post ends here  -->
 </div>

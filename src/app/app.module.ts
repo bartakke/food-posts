@@ -12,7 +12,9 @@ import { Metrial } from './material.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { PostContainerComponent } from './components/pages/post-container/post-container.component';
 import { HeaderComponent } from './components/commonComponents/header/header.component';
-import { FooterComponent } from './components/commonComponents/footer/footer.component'
+import { FooterComponent } from './components/commonComponents/footer/footer.component';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
+import { PostItemComponent } from './components/commonComponents/post-item/post-item.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +22,7 @@ import { FooterComponent } from './components/commonComponents/footer/footer.com
     HeaderComponent,
     PostContainerComponent,
     FooterComponent,
+    PostItemComponent,
 
   ],
   imports: [
@@ -30,6 +33,7 @@ import { FooterComponent } from './components/commonComponents/footer/footer.com
     HttpClientModule ,
     FormsModule,
     ReactiveFormsModule,
+    SlickCarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]

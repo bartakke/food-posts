@@ -1,0 +1,32 @@
+<div class="card " style="height: 183px;margin-right: 5px;    width: 183px;">
+  <div class="post" [ngStyle]="{background: 'url(../../../../assets/' + postItem.post_img + ') no-repeat'}">
+    <div class="d-flex justify-content-between p-1">
+      <div style=" color: #fff; font-size: 12px;">
+        <span class="material-icons" style=" font-size: 12px;">
+          schedule
+        </span>
+       {{postItem.post_date}}
+      </div>
+      <div class="bg-black">
+        <div style="background-color: #FFBF00;
+        border-radius: 59%;
+        padding: 4px;
+        font-size: 0px;">
+          <span class="material-icons">
+            insert_photo
+            </span>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex justify-content-center align-items-center pull-bottom post-footer">
+        <span class="material-icons">
+          favorite
+        </span>
+        <span>{{postItem.comments}}</span>
+        <span class="material-icons" >
+          sms
+        </span>
+        <span>{{postItem.likes}}</span>
+    </div>
+  </div>
+</div>

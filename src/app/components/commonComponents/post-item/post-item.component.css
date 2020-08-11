@@ -1,0 +1,20 @@
+
+.post-footer{
+  background:#FCF2CC;
+  font-size:12px;
+  bottom: 0;
+}
+
+.post-footer span{
+  padding: 0px 3px;
+  font-size:12px;
+}
+.comments-section   .like-section{
+  font-size:10px;
+}
+
+
+.post{
+  vertical-align: middle;
+  height: 100%;border-radius: 4px;
+}
